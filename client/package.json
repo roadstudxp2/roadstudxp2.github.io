@@ -2,7 +2,7 @@
   "name": "official-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ZengTianShengZ.github.io/official-website/",
+  "homepage": "https://ZengTianShengZ.github.io/",
   "dependencies": {
     "autoprefixer": "7.1.2",
     "axios": "^0.18.0",
