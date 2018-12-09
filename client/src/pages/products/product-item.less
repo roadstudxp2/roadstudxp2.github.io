@@ -1,0 +1,134 @@
+@import '~src/style/mixin.less';
+
+.app-product-item{
+  margin: 0 100px;
+  padding: 10px 0;
+  .top-guide{
+    padding: 5px 10px 10px;
+    font-weight: 600;
+    .top-guide-link{
+      color: @bcl;
+      font-weight: 600;
+    }
+  }
+  .product-content{
+    width: 100%;
+  }
+  .left-content{
+    background: #ffffff;
+    width: 100%;
+    padding: 10px;
+     
+  }
+  .etalage-content{
+    height: 495px;
+  }
+  .desc-content{
+    margin-left: 20px;
+    .title{
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .desc-part{
+      margin-bottom: 10px;
+      .p-text{
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        color: @bc;
+      }
+      .products-features{
+        span{
+          display: inline-block;
+          width: 120px;
+          font-weight: 500;
+        }
+      }
+    }
+    .p-s-a{
+      margin-bottom: 10px;
+      padding: 10px  5px;
+      background: #e6e7eb;
+    }
+  }
+  .right-content{
+    width: 300px;
+    margin-left: 10px;
+    padding: 10px;
+    background: url(https://img.alicdn.com/tfs/TB1WJJjw_tYBeNjy1XdXXXXyVXa-86-106.svg) no-repeat 100% 0,linear-gradient(0deg,#fff 74%,#fff2e8);
+    .heard-content{
+      margin-bottom: 10px;
+    }
+    .heard-img{
+      width: 66px;
+      height: 66px;
+      border-radius: 100px;
+    }
+    .heard-name{
+      margin-left: 5px;
+      font-weight: 500;
+    }
+    .p-text{
+      margin-bottom: 10px;
+      span{
+        display: block;
+        color: @bcl;
+      }
+    }
+    .contect-content{
+      font-size: 30px;
+      color: #fff2e8;
+      ion-icon{
+        margin-right: 10px;
+        color: @bc;
+      }
+    }
+  }
+  .centet-content{
+    width: 100%;
+    margin-top: 10px;
+    .left-content{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .left-content-bottom{
+      padding: 10px;
+      background: #ffffff;
+    }
+    .centet-content-right{
+      width: 300px;
+      margin-left: 10px;
+      padding: 10px;
+      background: #ffffff;
+    }
+  }
+  .tj-product-item{
+    margin-bottom: 10px;
+    .product-img{
+      display: block;
+      width: 120px;
+      height: 160px;
+    }
+    .prd-d{
+      margin-left: 5px;
+      .p-tt{
+        padding: 10px 0;
+        font-weight: 500;
+      }
+      .span-s{
+        font-size: 12px;
+        span{
+          display: inline-block;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  .app-product-item{
+    margin: 0 10px;
+  }
+}

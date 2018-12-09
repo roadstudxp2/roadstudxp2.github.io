@@ -1,0 +1,69 @@
+@import '~src/style/mixin.less';
+
+.app-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: @header-height;
+  padding: 5px 100px 0;
+  background: #141313;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  .title{
+    color: @bc;
+    font-size: 20px;
+  }
+  .link-text{
+    margin-right: 30px;
+    // color: @fc3;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 2px solid transparent;
+    &:hover{
+      color: @bcl;
+      border-bottom: 2px solid @bcl;
+    }
+  }
+  .link-act{
+    padding: 10px 0;
+    color: @bcl;
+    border-bottom: 2px solid @bcl;
+  }
+  .key-search{
+    border: 1px solid @bcl;
+    border-radius: 10px;
+    input{
+      color: @fc9;
+      display: inline-block;
+      width: 180px;
+      padding: 0 10px;
+      border-radius: 10px;
+      font-size: 12px;
+      outline: none;
+    }
+    .icon-search{
+      background: @bcl;
+      padding: 4px 10px;
+      border-radius: 0 9px 9px 0;
+      cursor: pointer;
+    }
+    ion-icon{
+      display: block;
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+}
+@media screen and (min-width:1500px) {
+  .app-header-content{
+    width: 1500px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width:768px) {
+  .app-header{
+    padding: 0 10px;
+  }
+}
