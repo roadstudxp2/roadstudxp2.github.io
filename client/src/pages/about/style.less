@@ -1,0 +1,54 @@
+@import '~src/style/mixin.less';
+
+.app-about{
+  .content-part{
+    margin: 0 100px;
+    padding: 10px;
+    background: #ffffff;
+    font-size: 14px;
+    .title{
+      margin-bottom: 10px;
+      padding-left: 10px;
+      border-left: 4px solid @bc;
+      font-weight: 600;
+    }
+    .content-p{
+      padding-left: 14px;
+      .title-3{
+        font-weight: 500;
+        margin-bottom: 4px;
+      }
+      p{
+        padding-left: 10px;
+      }
+    }
+    .certificate-img{
+      width: 400px;
+      height: 200px;
+    }
+  }
+  .google-map {
+    iframe{
+      width: 60%;
+      height: 344px;
+      border: none;
+    }
+    .address{
+      width: 40%;
+      margin-left: 20px;
+      font-size: 16px;
+      p{
+        margin-bottom: 10px;
+      }
+      .p-tel{
+        color: @bc;
+        font-weight: 500;
+      }
+    }
+  }
+}
+@media screen and (max-width:768px) {
+  .app-about .content-part .certificate-img{
+    width: 200px;
+  }
+}
