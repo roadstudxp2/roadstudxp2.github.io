@@ -75,7 +75,7 @@
     "markdown-it-container": "^2.0.0",
     "markdown-loader": "^3.0.0",
     "react-markdown-loader": "^1.1.14",
-    "react-snap": "^0.8.1",
+    "react-snap": "^0.8.2",
     "rehype-highlight": "^2.1.0"
   },
   "scripts": {
