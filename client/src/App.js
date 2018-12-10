@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Link, Route, Switch, Redirect } from 'react-router-dom';
+import { HashRouter, Link, Route, Switch, Redirect } from 'react-router-dom';
 import { parse } from 'url';
 import { homepage } from '../package.json';
 import routers from 'src/routers';
@@ -10,7 +10,7 @@ import './App.less';
 const basename = parse(homepage).pathname;
 
 const App = () => (
-  <BrowserRouter basename={basename}>
+  <HashRouter basename={basename}>
     <section className="app">
       <div className="app-body">
         <HeaderComp/>
@@ -26,7 +26,7 @@ const App = () => (
       </div>
       <FooterComp/>
     </section>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
