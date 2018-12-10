@@ -1,0 +1,24 @@
+@import '~src/style/mixin.less';
+
+.app{
+  width: 100%;
+  height: 100%;
+}
+.app-body{
+  min-height: 100%;
+}
+.app-content{
+  padding-top: @header-height;
+}
+@media screen and (min-width:1500px) {
+  .app-content{
+    width: 1500px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width:768px) {
+  .app{
+    width: 768px;
+    margin: 0 auto;
+  }
+}
