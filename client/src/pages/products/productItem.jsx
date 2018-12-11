@@ -35,13 +35,10 @@ class ProductItem extends Component {
   }
   getRandomList() {
     const randomList = [];
-    const sets = randomNums(0, productionData.length, 4);
-    console.log('---sets--', sets);
-    sets.forEach(indexId => {
-      let ra = productionData[indexId];
-      console.log('indexId-----', indexId);
-      ra.indexId = indexId;
-      randomList.push(ra);
+    const sets = randomNums(0, productionData.length - 1, 4);
+    sets.forEach(itemNum => {
+      let ra = productionData[itemNum];
+      randomList.push(Object.assign(ra, {indexId: itemNum}));
     });
     return randomList;
   }
@@ -58,7 +55,6 @@ class ProductItem extends Component {
   render() {
     const { describe, detail, imgUrls, title } = this.state.productionItem;
     const randomList = this.getRandomList();
-    console.log(randomList);
 
     return (
       <section className="app-product-item">

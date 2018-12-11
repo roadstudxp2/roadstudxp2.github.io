@@ -29,7 +29,6 @@ class ProductList extends Component {
   }
   componentDidMount() {
     window.scrollTo(0, 0)
-    console.log(productionData);
     this.setState({productionData})
     // this.getData()
   }
