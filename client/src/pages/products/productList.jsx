@@ -56,17 +56,10 @@ const ProductItem = (props) => {
 
   return (
     <li className="li-item" onClick={props.itemClick.bind(null, props.index)}>
-      <div className="li-item-content">
+      <div className="img-box">
         <img className="prod-img" src={imgUrls[0]} alt="Solar Road" />
-        <div className="products-detail">
-          <div className="title">{title}</div>
-          {/* <div className="details f-js-as-dc">
-            <span>Size:{feature.size}</span>
-            <span>color:{feature.color}</span>
-            <span>Weight:{feature.weight}</span>
-          </div> */}
-        </div>
       </div>
+      <div className="title">{title}</div>
     </li>
   )
 }

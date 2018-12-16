@@ -12,6 +12,9 @@ import productionData from 'src/asses/productionData.json';
 
 class Home extends Component {
   state = {};
+  onItemClick(productId) {
+    window.open(`${location.href}products/${productId}`)
+  }
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -46,8 +49,10 @@ class Home extends Component {
           <ul className="f-jc-ac">
             {mainProject.map((item, index) => {
               return (
-                <li className="li-item" key={index}>
-                  <img src={item.imgUrls[0]} alt="Solar Road" />
+                <li className="li-item" key={index} onClick={this.onItemClick.bind(null, index)}>
+                  <div className="img-box">
+                    <img src={item.imgUrls[0]} alt="Solar Road" />
+                  </div>
                   <h3 className="h3-title">{item.title}</h3>
                 </li>
               );
