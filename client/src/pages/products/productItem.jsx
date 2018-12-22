@@ -155,7 +155,7 @@ const Etalage = props => {
             <img
               className="etalage_source_image"
               src={item}
-              title="This text area can also be setup to appear at the top of the image.<br>This second line shows that the description can be longer."
+              title=""
             />
           </li>
         );

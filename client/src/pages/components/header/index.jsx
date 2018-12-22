@@ -16,9 +16,6 @@ class Header extends Component {
   }
   getIinkIndex() {
     const pathname = this.props.history.location.pathname || ''
-    console.log(this.props.history.location);
-    console.log(pathname);
-
     let linkCurser = 0
     if (pathname.indexOf('/about/') >= 0) {
       linkCurser = 1
