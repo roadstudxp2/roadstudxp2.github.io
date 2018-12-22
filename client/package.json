@@ -85,6 +85,7 @@
     "build": "node scripts/build.js && react-snap",
     "buildt": "node scripts/build.js",
     "buildtt": "node scripts/build.js && react-snapshot ",
+    "cp": "cp -r build/ ../",
     "postbuild": "react-snap",
     "test": "node scripts/test.js --env=jsdom",
     "lint": "eslint .",
