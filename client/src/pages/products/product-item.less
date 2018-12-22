@@ -104,25 +104,23 @@
     }
   }
   .tj-product-item{
-    margin-bottom: 10px;
+    padding: 10px 0;
+    border: 1px solid #fab07b;
+    border-bottom: 1px solid transparent;
+    &:last-child{
+      border-bottom: 1px solid #fab07b;
+    }
     .product-img{
       display: block;
       width: 120px;
-      height: 160px;
+      height: 148px;
     }
-    .prd-d{
-      margin-left: 5px;
-      .p-tt{
-        padding: 10px 0;
-        font-weight: 500;
-      }
-      .span-s{
-        font-size: 12px;
-        span{
-          display: inline-block;
-          font-weight: 500;
-        }
-      }
+    .p-tt{
+      padding: 10px 0;
+      font-weight: 500;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
     }
   }
 }

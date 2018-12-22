@@ -1,8 +1,6 @@
 import axios from 'axios';
 import store from 'store';
 
-console.log(process.env.NODE_ENV);
-
 const req = axios.create({
   baseURL: 'https://api.github.com/repos/roadstudxp2/official-website/',
   timeout: 3000
@@ -87,19 +85,19 @@ export const getProducts = async(url = '/issues/3') => {
 /**
  * _PRODUCT_TITLE_START_
  * _PRODUCT_TITLE_END_
- * 
+ *
  * _PRODUCT_IMG_START_
  * _PRODUCT_IMG_END_
- * 
+ *
  * _PRODUCT_DESCRIBE_START_
  * _PRODUCT_DESCRIBE_END_
- * 
+ *
  * _PRODUCT_DETAIL_START_
  * _PRODUCT_DETAIL_END_
- * 
- * 
- * @param {*} url 
- */ 
+ *
+ *
+ * @param {*} url
+ */
 export const getProductItem = async(url) => {
   const res = await getData(url)
   if (res.success) {

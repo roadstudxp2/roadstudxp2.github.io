@@ -6,6 +6,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import MarkdownRenderer from 'react-markdown-renderer';
+import NProgress from 'nprogress'; // Progress 进度条
 import { getProductItem } from 'src/API/index.js';
 import { randomNums } from 'src/utils/index.js';
 import productionData from 'src/asses/productionData.json';
@@ -15,6 +16,7 @@ import './product-item.less';
 
 class ProductItem extends Component {
   state = {
+    isShowContentFlag: false,
     resData: {
       describe: '',
       detail: '',
@@ -35,13 +37,10 @@ class ProductItem extends Component {
   }
   getRandomList() {
     const randomList = [];
-    const sets = randomNums(0, productionData.length, 4);
-    console.log('---sets--', sets);
-    sets.forEach(indexId => {
-      let ra = productionData[indexId];
-      console.log('indexId-----', indexId);
-      ra.indexId = indexId;
-      randomList.push(ra);
+    const sets = randomNums(0, productionData.length - 1, 4);
+    sets.forEach(itemNum => {
+      let ra = productionData[itemNum];
+      randomList.push(Object.assign(ra, {indexId: itemNum}));
     });
     return randomList;
   }
@@ -50,18 +49,27 @@ class ProductItem extends Component {
     href = href.substring(0, href.lastIndexOf('/products/'));
     window.open(`${href}/products/${productId}`);
   }
+  constructor() {
+    super()
+    NProgress.start()
+  }
   componentDidMount() {
     window.scrollTo(0, 0);
     const id = this.props.match.params.id;
     this.setState({ productionItem: productionData[id] });
   }
+  componentDidUpdate(previousProps, previousState) {
+    if (!this.state.isShowContentFlag) {
+      NProgress.done()
+      this.setState({isShowContentFlag: true})
+    }
+  }
   render() {
     const { describe, detail, imgUrls, title } = this.state.productionItem;
     const randomList = this.getRandomList();
-    console.log(randomList);
 
     return (
-      <section className="app-product-item">
+      <section className="app-product-item" style={this.state.isShowContentFlag ? {visibility: 'visible'} : {visibility: 'hidden'}}>
         <div className="top-guide">
           <Link className="top-guide-link" to="/products/">
             Products
@@ -95,14 +103,18 @@ class ProductItem extends Component {
             <p className="p-text">
               <span>Email</span>roadstudXP@foxmail.com
             </p>
-            <div className="contect-content">
+            <p className="p-text">
+              <span>Twitter</span>
+              <a target="_blank" href="https://twitter.com/LucyRoadstud" style={{color: '#333333'}}>https://twitter.com/LucyRoadstud</a>
+            </p>
+            {/* <div className="contect-content">
               <a target="_blank" href="https://www.facebook.com/lucy.guo.7965">
                 <ion-icon name="logo-facebook" />
               </a>
               <a target="_blank" href="https://twitter.com/LucyRoadstud">
                 <ion-icon name="logo-twitter" />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="centet-content f-jb-as">
@@ -154,16 +166,10 @@ const RecommendItem = props => {
 
   return (
     <div className="tj-product-item f-jc-ac-dc" onClick={props.itemClick.bind(null, indexId)}>
-      <img className="product-img" src={imgUrls[0]} alt="Solar Road" />
-      <div className="prd-d">
-        <p className="p-tt ellipsis">{title}</p>
-        {/* <div className="span-s">
-          <p className="ellipsis"><span>Size:</span> Ø116*25mm</p>
-          <p className="ellipsis"><span>Material:</span> PC shell with epoxy filler</p>
-          <p className="ellipsis"><span>Weight:</span> about 0.3kg</p>
-          <p className="ellipsis"><span>color:</span> white ,red ,yellow ,green,blue</p>
-        </div> */}
+      <div className="img-box">
+        <img className="product-img" src={imgUrls[0]} alt="Solar Road" />
       </div>
+      <p className="p-tt ellipsis">{title}</p>
     </div>
   );
 };
