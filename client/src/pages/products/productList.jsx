@@ -43,7 +43,6 @@ class ProductList extends Component {
   }
   render() {
     const productionData = this.state.productionData
-    console.log(this.state.isShowContentFlag);
     return (
       <section className="app-product-list" style={this.state.isShowContentFlag ? {visibility: 'visible'} : {visibility: 'hidden'}}>
         <div className="top-guide">

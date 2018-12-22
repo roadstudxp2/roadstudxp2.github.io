@@ -59,10 +59,12 @@ class ProductItem extends Component {
     this.setState({ productionItem: productionData[id] });
   }
   componentDidUpdate(previousProps, previousState) {
-    if (!this.state.isShowContentFlag) {
-      NProgress.done()
-      this.setState({isShowContentFlag: true})
-    }
+    setTimeout(() => {
+      if (!this.state.isShowContentFlag) {
+        NProgress.done()
+        this.setState({isShowContentFlag: true})
+      }
+    }, 1000);
   }
   render() {
     const { describe, detail, imgUrls, title } = this.state.productionItem;

@@ -18,7 +18,7 @@
 
 /* Large thumbnail: */
 #etalage .etalage_thumb{
-	background: white url(/react-snap-example/icon/etalage/loading.gif) center no-repeat;
+	background: white url(/image/icon/etalage/loading.gif) center no-repeat;
 	border: 1px solid #ddd;
 	padding: 6px;
 	-webkit-box-shadow: 0 0 10px #ddd;
@@ -49,7 +49,7 @@
 /* Zoomed image area: */
 #etalage .etalage_zoom_area,
 .etalage_zoom_area{
-	background: white url(/react-snap-example/icon/etalage/loading.gif) center no-repeat;
+	background: white url(/image/icon/etalage/loading.gif) center no-repeat;
 	border: 1px solid #ddd;
 	padding: 6px;
 	-webkit-box-shadow: 0 0 10px #ddd;
@@ -65,14 +65,14 @@
 
 /* Icon that will apear at the left bottom of the large thumbnail (optional): */
 #etalage .etalage_icon{
-	background: url(/react-snap-example/icon/etalage/zoom.png) no-repeat;
+	background: url(/image/icon/etalage/zoom.png) no-repeat;
 	width: 14px;
 	height: 14px;
 }
 
 /* Hint that will apear at the top right of the large thumbnail (optional): */
 #etalage .etalage_hint{
-	/* background: url(/react-snap-example/icon/etalage/hint.gif) no-repeat; */
+	/* background: url(/image/icon/etalage/hint.gif) no-repeat; */
 	width: 130px;
 	height: 57px;
 }
