@@ -6,6 +6,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import MarkdownRenderer from 'react-markdown-renderer';
+import NProgress from 'nprogress'; // Progress 进度条
 import { getProductItem } from 'src/API/index.js';
 import { randomNums } from 'src/utils/index.js';
 import productionData from 'src/asses/productionData.json';
@@ -15,6 +16,7 @@ import './product-item.less';
 
 class ProductItem extends Component {
   state = {
+    isShowContentFlag: false,
     resData: {
       describe: '',
       detail: '',
@@ -47,17 +49,27 @@ class ProductItem extends Component {
     href = href.substring(0, href.lastIndexOf('/products/'));
     window.open(`${href}/products/${productId}`);
   }
+  constructor() {
+    super()
+    NProgress.start()
+  }
   componentDidMount() {
     window.scrollTo(0, 0);
     const id = this.props.match.params.id;
     this.setState({ productionItem: productionData[id] });
+  }
+  componentDidUpdate(previousProps, previousState) {
+    if (!this.state.isShowContentFlag) {
+      NProgress.done()
+      this.setState({isShowContentFlag: true})
+    }
   }
   render() {
     const { describe, detail, imgUrls, title } = this.state.productionItem;
     const randomList = this.getRandomList();
 
     return (
-      <section className="app-product-item">
+      <section className="app-product-item" style={this.state.isShowContentFlag ? {visibility: 'visible'} : {visibility: 'hidden'}}>
         <div className="top-guide">
           <Link className="top-guide-link" to="/products/">
             Products

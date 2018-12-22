@@ -4,6 +4,7 @@
  * @update: 2018/5/23
  */
 import React, {Component} from 'react';
+import NProgress from 'nprogress'; // Progress 进度条
 import { Link } from 'react-router-dom';
 import {getProducts} from 'src/API/index.js';
 import './product-list.less'
@@ -11,6 +12,7 @@ import productionData from 'src/asses/productionData.json'
 
 class ProductList extends Component {
   state = {
+    isShowContentFlag: false,
     resData: {
       list: []
     },
@@ -18,24 +20,32 @@ class ProductList extends Component {
   }
   async getData() {
     const res = await getProducts()
-    console.log(res);
     if (res.success) {
       this.setState({resData: res.data})
     }
   }
   onItemClick(productId) {
     window.open(`${location.href}${productId}`)
-    // this.props.history.push('/products/' + productId)
+  }
+  constructor() {
+    super()
+    NProgress.start()
   }
   componentDidMount() {
     window.scrollTo(0, 0)
     this.setState({productionData})
-    // this.getData()
+  }
+  componentDidUpdate(previousProps, previousState) {
+    if (!this.state.isShowContentFlag) {
+      NProgress.done()
+      this.setState({isShowContentFlag: true})
+    }
   }
   render() {
     const productionData = this.state.productionData
+    console.log(this.state.isShowContentFlag);
     return (
-      <section className="app-product-list">
+      <section className="app-product-list" style={this.state.isShowContentFlag ? {visibility: 'visible'} : {visibility: 'hidden'}}>
         <div className="top-guide">
           <Link className="top-guide-link" to="/products/">Products</Link>
         </div>
