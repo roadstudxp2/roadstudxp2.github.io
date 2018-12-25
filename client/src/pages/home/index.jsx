@@ -66,35 +66,39 @@ class Home extends Component {
               <ul className="ul-items f-jc-ac">
                 <li className="li-item f-jc-ac-dc">
                   <img
-                    src="https://user-images.githubusercontent.com/35425986/49698887-f416be00-fc04-11e8-897c-912ac7c4ae93.png"
-                    alt=""
-                  />
-                  <span>Sales Manager</span>
-                  <a href="mailto:solarroadstud@yeah.net">solarroadstud@yeah.net</a>
-                </li>
-                <li className="li-item f-jc-ac-dc">
-                  <img
                     src="https://user-images.githubusercontent.com/35425986/49698888-f416be00-fc04-11e8-938a-9858a3b2aefd.png"
                     alt=""
                   />
+                  <span>James Lin</span>
                   <span>Sales Manager</span>
-                  <a href="mailto:solarroadstud@yeah.net">solarroadstud@yeah.net</a>
+                  {/* <a href="mailto:solarroadstud@yeah.net">solarroadstud@yeah.net</a> */}
+                </li>
+                <li className="li-item f-jc-ac-dc">
+                  <img
+                    src="https://user-images.githubusercontent.com/35425986/49698887-f416be00-fc04-11e8-897c-912ac7c4ae93.png"
+                    alt=""
+                  />
+                  <span>Bella Zeng </span>
+                  <span>Sales Manager</span>
+                  {/* <a href="mailto:solarroadstud@yeah.net">solarroadstud@yeah.net</a> */}
                 </li>
                 <li className="li-item f-jc-ac-dc">
                   <img
                     src="https://user-images.githubusercontent.com/35425986/49698889-f4af5480-fc04-11e8-9565-878bbbd3c87e.png"
                     alt=""
                   />
+                  <span>Lucy Guo</span>
                   <span>Sales Manager</span>
-                  <a href="mailto:solarroadstud@yeah.net">solarroadstud@yeah.net</a>
+                  {/* <a href="mailto:solarroadstud@yeah.net">solarroadstud@yeah.net</a> */}
                 </li>
                 <li className="li-item f-jc-ac-dc">
                   <img
                     src="https://user-images.githubusercontent.com/35425986/49698890-f547eb00-fc04-11e8-9ace-f31cd683058c.png"
                     alt=""
                   />
+                  <span>Tian Zeng</span>
                   <span>Sales Manager</span>
-                  <a href="mailto:solarroadstud@yeah.net">solarroadstud@yeah.net</a>
+                  {/* <a href="mailto:solarroadstud@yeah.net">solarroadstud@yeah.net</a> */}
                 </li>
               </ul>
             </div>

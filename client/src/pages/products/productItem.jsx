@@ -97,17 +97,19 @@ class ProductItem extends Component {
               <span className="heard-name">Sales Manager</span>
             </div>
             <p className="p-text">
-              <span>Company</span> Fujian XP Industrial Co.,LTD
+              <span>Company</span> Fujian XingPing Industry&Trade Co.,LTD
             </p>
             <p className="p-text">
-              <span>Phone</span> +86 15505965690(wechat)
+              <span>Phone</span>
+              <span>+86 15505965690</span>
+              <span>+86 17359619659</span>
             </p>
             <p className="p-text">
-              <span>Email</span>roadstudXP@foxmail.com
+              <span>Email</span>info@roadstudxp.com
             </p>
             <p className="p-text">
-              <span>Twitter</span>
-              <a target="_blank" href="https://twitter.com/LucyRoadstud" style={{color: '#333333'}}>https://twitter.com/LucyRoadstud</a>
+              <span>Facebook</span>
+              <a target="_blank" href="https://www.facebook.com/FUJIANXP/" style={{color: '#333333'}}>https://www.facebook.com/FUJIANXP/</a>
             </p>
             {/* <div className="contect-content">
               <a target="_blank" href="https://www.facebook.com/lucy.guo.7965">
