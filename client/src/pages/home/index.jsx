@@ -26,7 +26,7 @@ class Home extends Component {
         <div className="part-section part-1">
           <h2 className="title">FUJIAN XP INDUSTRIAL CO.,LTD</h2>
           <p className="p-text">
-            &nbsp;&nbsp;&nbsp;&nbsp;Fujian XP Industrial Co.,LTD, always being innovative in traffic and work security
+            &nbsp;&nbsp;&nbsp;&nbsp;Fujian XingPing Industry&Trade Co.,LTD, always being innovative in traffic and work security
             sector, providing the highest quality product in the fastest time to provide the best customer satisfaction.
           </p>
           <p className="p-text">
@@ -70,7 +70,7 @@ class Home extends Component {
                     alt=""
                   />
                   <span>James Lin</span>
-                  <span>Sales Manager</span>
+                  <span>General Manager</span>
                   {/* <a href="mailto:solarroadstud@yeah.net">solarroadstud@yeah.net</a> */}
                 </li>
                 <li className="li-item f-jc-ac-dc">
@@ -88,7 +88,7 @@ class Home extends Component {
                     alt=""
                   />
                   <span>Lucy Guo</span>
-                  <span>Sales Manager</span>
+                  <span>Marketing Manager</span>
                   {/* <a href="mailto:solarroadstud@yeah.net">solarroadstud@yeah.net</a> */}
                 </li>
                 <li className="li-item f-jc-ac-dc">
@@ -97,7 +97,7 @@ class Home extends Component {
                     alt=""
                   />
                   <span>Tian Zeng</span>
-                  <span>Sales Manager</span>
+                  <span>R&D Manager</span>
                   {/* <a href="mailto:solarroadstud@yeah.net">solarroadstud@yeah.net</a> */}
                 </li>
               </ul>
@@ -108,11 +108,11 @@ class Home extends Component {
           <div className="content">
             <div className="content-c">
               <h2 className="title">Why Choose Us</h2>
-              <p className="p-text">
+              {/* <p className="p-text">
                 We have more than 10 years construction and producr traffic signal) ,Traffic Cone , Lane Divider, Convex
                 Mirror, Road Line Marking Machine and Paint. Our competitive is professional and comprehensive with
                 quality and price, you are warming welcome to cooperate with us.
-              </p>
+              </p> */}
               <div className="f-jc-ac labels">
                 <span className="label-item">Over 20 tons compression resistance</span>
                 <span className="label-item">Can work in low/high temp,-20℃～+70℃.</span>

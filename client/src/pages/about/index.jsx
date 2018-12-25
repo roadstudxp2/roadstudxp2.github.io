@@ -54,7 +54,7 @@ and production on road studs. Among our products, the solar road stud - plastic 
 become the most durable road construction products with best quality in the world after continuous improvement over 20 years.
           </p>
         </div>
-        <div className="content-part">
+        {/* <div className="content-part">
           <h2 className="title">Profile</h2>
           <div className="content-p">
             <h3 className="title-3">About RoadstudXP</h3>
@@ -110,6 +110,7 @@ become the most durable road construction products with best quality in the worl
             </p>
           </div>
         </div>
+        */}
         <div className="content-part">
           <h2 className="title">Tade Capacity</h2>
           <img src="https://user-images.githubusercontent.com/35425986/50422901-d6468b80-0889-11e9-987b-33beaf0883ea.png" alt="Tade Capacity"/>
