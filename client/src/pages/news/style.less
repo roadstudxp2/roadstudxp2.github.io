@@ -1,5 +1,54 @@
-.app-home{
-  .verify-content{
-    padding-top: 55px;
+@import '~src/style/mixin.less';
+
+.app-news{
+  .content{
+    margin: 0 100px;
+    padding: 10px;
+    // background: #ffffff;
+    font-size: 14px;
+  }
+  .content-menu{
+    .li-menu{
+      width: 280px;
+      margin-top: 10px;
+      padding: 10px;
+      margin-right: 10px;
+      color: #ff7519;
+      background: #ffffff;
+      cursor: pointer;
+      .h-title{
+        font-size: 16px;
+        font-weight: 800;
+        &:hover{
+          color: #f08741;
+          text-decoration:underline;
+        }
+      }
+      .span-time{
+        display: inline-block;
+        padding: 10px 0;
+      }
+    }
+  }
+  .content-article{
+    padding: 10px;
+    background: #ffffff;
+    .h-title{
+      font-weight: 800;
+    }
+    .span-time{
+      font-weight: 800;
+      display: block;
+      padding: 10px 0;
+    }
+  }
+}
+@media screen and (max-width:768px) {
+  .app-news .content{
+    margin: 0 ;
+    padding: 0;
+  }
+  .app-news .content .certificate-img{
+    width: 200px;
   }
 }

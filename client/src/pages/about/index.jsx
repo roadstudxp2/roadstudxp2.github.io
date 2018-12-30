@@ -113,7 +113,7 @@ become the most durable road construction products with best quality in the worl
         */}
         <div className="content-part">
           <h2 className="title">Tade Capacity</h2>
-          <img src="https://user-images.githubusercontent.com/35425986/50422901-d6468b80-0889-11e9-987b-33beaf0883ea.png" alt="Tade Capacity"/>
+          <img style={{width: '100%'}} src="https://user-images.githubusercontent.com/35425986/50422901-d6468b80-0889-11e9-987b-33beaf0883ea.png" alt="Tade Capacity"/>
         </div>
         {/* <div className="content-part">
           <h2 className="title">Certificate</h2>
