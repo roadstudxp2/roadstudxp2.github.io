@@ -24,7 +24,7 @@ class Home extends Component {
       <section className="app-home">
         <SimpleSlider />
         <div className="part-section part-1">
-          <h2 className="title">FUJIAN XP INDUSTRIAL CO.,LTD</h2>
+          <h2 className="title">Fujian XingPing Industry&Trade Co.,LTD</h2>
           <p className="p-text">
             &nbsp;&nbsp;&nbsp;&nbsp;Fujian XingPing Industry&Trade Co.,LTD, always being innovative in traffic and work security
             sector, providing the highest quality product in the fastest time to provide the best customer satisfaction.
