@@ -24,9 +24,9 @@ class Home extends Component {
       <section className="app-home">
         <SimpleSlider />
         <div className="part-section part-1">
-          <h2 className="title">Fujian XingPing Industry&Trade Co.,LTD</h2>
+          <h2 className="title">Fujian XingPing Road Equipment Co.,LTD</h2>
           <p className="p-text">
-            &nbsp;&nbsp;&nbsp;&nbsp;Fujian XingPing Industry&Trade Co.,LTD, always being innovative in traffic and work security
+            &nbsp;&nbsp;&nbsp;&nbsp;Fujian XingPing Road Equipment Co.,LTD, always being innovative in traffic and work security
             sector, providing the highest quality product in the fastest time to provide the best customer satisfaction.
           </p>
           <p className="p-text">
@@ -148,28 +148,28 @@ class SimpleSlider extends React.Component {
         <div>
           <img
             className="slider-img"
-            src="https://user-images.githubusercontent.com/35425986/49698876-f11bcd80-fc04-11e8-826d-38ac44c09d84.jpeg"
+            src="https://user-images.githubusercontent.com/35425986/50725233-8a230300-1135-11e9-8e21-648dd12139dd.jpeg"
             alt=""
           />
         </div>
         <div>
           <img
             className="slider-img"
-            src="https://user-images.githubusercontent.com/35425986/49698877-f11bcd80-fc04-11e8-91e9-09165339f5e0.jpeg"
+            src="https://user-images.githubusercontent.com/35425986/50725234-8a230300-1135-11e9-98f2-5d964fd685ca.jpeg"
             alt=""
           />
         </div>
         <div>
           <img
             className="slider-img"
-            src="https://user-images.githubusercontent.com/35425986/49698878-f1b46400-fc04-11e8-8156-ab44ef6f0593.jpeg"
+            src="https://user-images.githubusercontent.com/35425986/50725235-8abb9980-1135-11e9-83b4-731bfc9539c4.jpeg"
             alt=""
           />
         </div>
         <div>
           <img
             className="slider-img"
-            src="https://user-images.githubusercontent.com/35425986/49698879-f24cfa80-fc04-11e8-86e0-a9a3a7fbf882.jpeg"
+            src="https://user-images.githubusercontent.com/35425986/50725236-8abb9980-1135-11e9-8d4e-e0d9bb9d57bd.jpeg"
             alt=""
           />
         </div>
