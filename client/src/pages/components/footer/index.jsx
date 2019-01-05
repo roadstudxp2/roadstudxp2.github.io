@@ -17,7 +17,7 @@ class Footer extends Component {
         <div className="app-footer-contnet f-jc-ac">
           <div className="content f-js-as-dc">
             <span>Company</span>
-            <span>Fujian XingPing Industry&Trade Co.,LTD</span>
+            <span>Fujian XingPing Road Equipment Co.,LTD</span>
             <span>Specialized on road stud since 1996</span>
           </div>
           <div className="content f-js-as-dc">

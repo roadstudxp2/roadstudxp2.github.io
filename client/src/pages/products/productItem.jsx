@@ -97,7 +97,7 @@ class ProductItem extends Component {
               <span className="heard-name">Sales Manager</span>
             </div>
             <p className="p-text">
-              <span>Company</span> Fujian XingPing Industry&Trade Co.,LTD
+              <span>Company</span> Fujian XingPing Road Equipment Co.,LTD
             </p>
             <p className="p-text">
               <span>Phone</span>
